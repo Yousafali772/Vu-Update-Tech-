@@ -1,0 +1,59 @@
+<!-- page-sitemap.xml -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+   <url>
+      <loc>https://vuedutech.com/</loc>
+   </url>
+
+   <url>
+      <loc>https://vuedutech.com/handout-notes/handout/</loc>
+   </url>
+
+   <url>
+      <loc>https://vuedutech.com/handout-notes/highlight-handout/</loc>
+   </url>
+
+   <url>
+      <loc>https://vuedutech.com/handout-notes/short-vedio-lecture/</loc>
+   </url>
+
+   <url>
+      <loc>https://vuedutech.com/past-papers/midterm-pastpapers/</loc>
+   </url>
+
+   <url>
+      <loc>https://vuedutech.com/past-papers/midterm-pastpapers-video/</loc>
+   </url>
+
+   <url>
+      <loc>https://vuedutech.com/past-papers/finalterm-pastpapers/</loc>
+   </url>
+
+   <url>
+      <loc>https://vuedutech.com/past-papers/finalterm-pastpapers-video/</loc>
+   </url>
+
+   <url>
+      <loc>https://vuedutech.com/vuhelper/</loc>
+   </url>
+
+   <url>
+      <loc>https://vuedutech.com/footer/about/</loc>
+   </url>
+
+   <url>
+      <loc>https://vuedutech.com/footer/contact/</loc>
+   </url>
+
+   <url>
+      <loc>https://vuedutech.com/footer/term-&amp;-condition/</loc>
+   </url>
+
+   <url>
+      <loc>https://vuedutech.com/footer/privacy-policy/</loc>
+   </url>
+
+</urlset>

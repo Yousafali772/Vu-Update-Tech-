@@ -1,14 +1,6 @@
+# robots.txt
+
 User-agent: *
 Allow: /
-User-agent: Googlebot
-Allow: /
 
-Disallow: /cgi-bin/
-
-User-agent: naverbot
-Disallow: /
-
-User-agent: yeti
-Disallow: /
-
-Sitemap: https://vuedutech.com/sitemap.xml
+Sitemap: https://vuedutech.com/sitemap_index.xml
