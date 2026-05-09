@@ -4,12 +4,12 @@
 <loc>https://vuedutech.com/page-sitemap.xml</loc>
 </sitemap>
 <sitemap>
-<loc>https://vuedutech.com/post-sitemap.xml</loc>
+<!-- <loc>https://vuedutech.com/post-sitemap.xml</loc> -->
 </sitemap>
 <sitemap>
-<loc>https://vuedutech.com/author-sitemap.xml</loc>
+<!-- <loc>https://vuedutech.com/author-sitemap.xml</loc> -->
 </sitemap>
 <sitemap>
-<loc>https://vuedutech.com/category-sitemap.xml</loc>
+<!-- <loc>https://vuedutech.com/category-sitemap.xml</loc> -->
 </sitemap>
 </sitemapindex>
