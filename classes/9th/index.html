@@ -4,101 +4,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course Search Demo</title>
-
-    <style>
-        body {
-            font-family: Arial;
-            padding: 20px;
-        }
-
-        #searchBar {
-            padding: 10px;
-            width: 300px;
-            margin-bottom: 20px;
-        }
-
-        .course-item {
-            border: 1px solid #ccc;
-            padding: 10px;
-            margin-bottom: 10px;
-            border-radius: 5px;
-        }
-    </style>
-
+    <link rel="shortcut icon" href="/assets/img/logo.jpeg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/style.css">
+    <title>...</title>
 </head>
 
 <body>
+    <main class="container custom-page mt-4">
 
-    <h1>Course List</h1>
+        <h2 class="text-center mb-3 custom-heading">Class 9 Resources</h2>
 
-    <input type="text" id="searchBar" placeholder="Search course...">
+        <!-- 🔍 Search Bar -->
+        <input type="text" id="searchBar_class" class="form-control mb-3 custom-search"
+            placeholder="Search subject, paper, scheme...">
 
-    <div class="course-list">
-
-        <div class="course-item">
-            <div>Computer Science 101</div>
-            <div class="course-code">CS101</div>
+        <!-- 🔘 Filter Buttons -->
+        <div class="text-center mb-4">
+            <button class="btn btn-primary filter-btn custom-filter" data-filter="all">All</button>
+            <button class="btn btn-outline-primary filter-btn custom-filter" data-filter="books">Books</button>
+            <button class="btn btn-outline-primary filter-btn custom-filter" data-filter="papers">Past Papers</button>
+            <button class="btn btn-outline-primary filter-btn custom-filter" data-filter="scheme">Pairing
+                Scheme</button>
         </div>
 
-        <div class="course-item">
-            <div>Management 101</div>
-            <div class="course-code">MGT101</div>
+        <!-- 📦 Cards -->
+        <div class="row" id="cardContainer">
+            <!-- Book Section  -->
+            <div class="col-md-4 mb-3 custom-card-item" data-category="books">
+                <div class="custom-card p-2">
+
+                    <div class="row g-0 align-items-center custom-card-row">
+
+                        <!-- 🖼 Left Image -->
+                        <div class="col-4">
+                            <img src="image.png" class="img-fluid rounded custom-img" alt="Physics">
+                        </div>
+
+                        <!-- 📄 Right Content -->
+                        <div class="col-8">
+                            <div class="p-2">
+                                <h5 class="custom-title">Physics Book</h5>
+                                <p class="custom-text">Class 9 Physics Textbook</p>
+                                <a href="#" class="btn btn-sm btn-success custom-btn">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Paper Section -->
+            <div class="col-md-4 mb-3 custom-card-item" data-category="papers">
+                <div class="custom-card p-2">
+                    <div class="row g-0 align-items-center custom-card-row">
+                        <div class="col-4">
+                            <img src="image.png" class="img-fluid rounded custom-img">
+                        </div>
+                        <div class="col-8">
+                            <div class="p-2">
+                                <h5 class="custom-title">Math Past Paper 2023</h5>
+                                <p class="custom-text">Solved Paper</p>
+                                <a href="#" class="btn btn-success btn-sm custom-btn">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Pairing Scheme Section -->
+            <div class="col-md-4 mb-3 custom-card-item" data-category="scheme">
+                <div class="custom-card p-2">
+                    <div class="row g-0 align-items-center custom-card-row">
+                        <div class="col-4">
+                            <img src="image.png" class="img-fluid rounded custom-img">
+                        </div>
+                        <div class="col-8">
+                            <div class="p-2">
+                                <h5 class="custom-title">Biology Pairing Scheme</h5>
+                                <p class="custom-text">Latest Scheme</p>
+                                <a href="#" class="btn btn-success btn-sm custom-btn">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="course-item">
-            <div>Web Development</div>
-            <div class="course-code">WEB202</div>
-        </div>
-
-        <div class="course-item">
-            <div>Marketing Basics</div>
-            <div class="course-code">MKT303</div>
-        </div>
-
-    </div>
-
+    </main>
     <script>
-       document.addEventListener('DOMContentLoaded', function () {
+        // class file code 
 
-            var searchBar = document.getElementById('searchBar');
+        let searchBar_class = document.getElementById("searchBar_class");
+        let cards = document.querySelectorAll(".custom-card-item");
+        let buttons = document.querySelectorAll(".custom-filter");
 
-            if (searchBar) {
-                searchBar.addEventListener('keyup', function () {
+        let currentFilter = "all";
 
-                    var input = this.value.toLowerCase().trim();
-                    var courses = document.querySelectorAll('.course-item');
+        // 🔍 Search
+        searchBar_class.addEventListener("keyup", filterCards);
 
-                    courses.forEach(function (course) {
+        // 🔘 Filter buttons
+        buttons.forEach((btn) => {
+            btn.addEventListener("click", function () {
+                currentFilter = this.getAttribute("data-filter");
 
-                        var courseName = course.children[0]?.textContent.toLowerCase() || '';
-                        var courseCode = course.querySelector('.course-code')?.textContent.toLowerCase() || '';
+                buttons.forEach((b) => b.classList.remove("btn-primary"));
+                this.classList.add("btn-primary");
 
-                        // split words (Computer Science -> ["computer", "science"])
-                        var words = courseName.split(" ");
-
-                        // check if any word starts with input
-                        var nameMatch = words.some(function (word) {
-                            return word.startsWith(input);
-                        });
-
-                        // check course code
-                        var codeMatch = courseCode.startsWith(input);
-
-                        if (nameMatch || codeMatch || input === "") {
-                            course.style.display = '';
-                        } else {
-                            course.style.display = 'none';
-                        }
-
-                    });
-
-                });
-            }
-
+                filterCards();
+            });
         });
-    </script>
 
+        // 🔥 Main function
+        function filterCards() {
+            let input = searchBar_class.value.toLowerCase();
+
+            cards.forEach((card) => {
+                let text = card.innerText.toLowerCase();
+                let category = card.getAttribute("data-category");
+
+                let matchSearch = text.includes(input);
+                let matchCategory = currentFilter === "all" || category === currentFilter;
+
+                card.style.display = matchSearch && matchCategory ? "block" : "none";
+            });
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
