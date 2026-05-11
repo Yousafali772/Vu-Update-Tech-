@@ -158,6 +158,62 @@ body {
     top: 50%;
     transform: translateY(-50%);
 }
+
+/* class file code  */
+
+/* 🌐 Scoped Page */
+.custom-page {
+  /* background: linear-gradient(135deg, #eef2f7, #ffffff); */
+  font-family: 'Poppins', sans-serif;
+}
+
+/* 🔥 Heading */
+.custom-heading {
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+/* 🔍 Search */
+.custom-search {
+  border-radius: 30px;
+  padding: 12px 20px;
+  border: 1px solid #ddd;
+}
+
+.custom-search:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 10px rgba(13,110,253,0.2);
+}
+
+/* 🔘 Buttons */
+.custom-filter {
+  border-radius: 20px;
+  padding: 8px 18px;
+  margin: 5px;
+}
+
+/* 📦 Card */
+.custom-card {
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: 0.3s;
+  background: #fff;
+}
+
+.custom-card:hover {
+  transform: translateY(-8px);
+}
+
+/* Text */
+.custom-title {
+  font-weight: 600;
+  color: #34495e;
+}
+
+.custom-text {
+  color: #7f8c8d;
+  font-size: 14px;
+}
 /* Navbar search results */
 /* .search-box {
   position: relative;
