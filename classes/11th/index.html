@@ -1,50 +1,996 @@
-<h2 class="text-center mt-4 fw-bold text-primary">CS Subjects</h2>
-<table class="table table-striped mt-3">
-    <thead>
-        <tr>
-            <th scope="col" class="text-primary">Past Paper & Code</th>
-            <th scope="col" class="text-primary">Download</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr class="course-item">
-            <td class="pt-3 ps-4 fw-bold text-primary course-code">CS001
-            </td>
-            <td>
-                <a href="#" class="btn ms-3 btn-info fw-bold text-dark">
-                    <span class="d-flex gap-2 align-items-center">
-                        <span class="d-none d-sm-block">
-                            Download
-                        </span>
-                        <img src="/assets/img/down.svg" alt="Download" width="20px">
-                    </span>
-                </a>
-            </td>
-        </tr>
-    </tbody>
-</table>
-<h2 class="text-center mt-4 fw-bold text-primary">MTH Subjects</h2>
-<table class="table table-striped mt-3">
-    <thead>
-        <tr>
-            <th scope="col" class="text-primary">Past Paper & Code</th>
-            <th scope="col" class="text-primary">Download</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr class="course-item">
-            <td class="pt-3 ps-4 fw-bold text-primary course-code">MTH001
-            </td>
-            <td>
-                <a href="#" class="btn ms-3 btn-info fw-bold text-dark">
-                    <span class="d-flex gap-2 align-items-center">
-                        <span class="d-none d-sm-block">
-                            Download
-                        </span>
-                        <img src="/assets/img/down.svg" alt="Download" width="20px">
-                    </span>
-                </a>
-            </td>
-        </tr>
-    </tbody>
-</table>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/img/logo.jpeg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/style.css">
+    <title>...</title>
+</head>
+
+<body>
+    <main class="container custom-page mt-4">
+
+        <h2 class="text-center mb-3 custom-heading">Class 11 Resources</h2>
+
+        <!-- 🔍 Search Bar -->
+        <input type="text" id="searchBar_class" class="form-control mb-3 custom-search"
+            placeholder="Search subject, paper, scheme...">
+
+        <!-- 🔘 Filter Buttons -->
+        <div class="text-center mb-4">
+            <button class="btn btn-primary filter-btn custom-filter" data-filter="all">All</button>
+            <button class="btn btn-outline-primary filter-btn custom-filter" data-filter="books">Books</button>
+            <button class="btn btn-outline-primary filter-btn custom-filter" data-filter="papers">Past Papers</button>
+            <button class="btn btn-outline-primary filter-btn custom-filter" data-filter="scheme">Pairing
+                Scheme</button>
+        </div>
+
+        <!-- 📦 Cards -->
+        <div class="row" id="cardContainer">
+            <!-- Book Section start -->
+            <!-- book 1 -->
+            <div class="col-md-4 mb-3 custom-card-item" data-category="books">
+                <div class="custom-card p-2">
+
+                    <div class="row g-0 align-items-center custom-card-row">
+
+                        <!-- 🖼 Left Image -->
+                        <div class="col-4">
+                            <img src="image.png" class="img-fluid rounded custom-img" alt="Physics">
+                        </div>
+
+                        <!-- 📄 Right Content -->
+                        <div class="col-8">
+                            <div class="p-2">
+                                <h5 class="custom-title">Physics Book</h5>
+                                <p class="custom-text">Class 11 Physics Textbook</p>
+                                <a href="#" class="btn btn-sm btn-success custom-btn">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- book 2 -->
+            <div class="col-md-4 mb-3 custom-card-item" data-category="books">
+                <div class="custom-card p-2">
+
+                    <div class="row g-0 align-items-center custom-card-row">
+
+                        <!-- 🖼 Left Image -->
+                        <div class="col-4">
+                            <img src="image.png" class="img-fluid rounded custom-img" alt="Physics">
+                        </div>
+
+                        <!-- 📄 Right Content -->
+                        <div class="col-8">
+                            <div class="p-2">
+                                <h5 class="custom-title">Physics Book</h5>
+                                <p class="custom-text">Class 11 Physics Textbook</p>
+                                <a href="#" class="btn btn-sm btn-success custom-btn">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- book 3 -->
+            <div class="col-md-4 mb-3 custom-card-item" data-category="books">
+                <div class="custom-card p-2">
+
+                    <div class="row g-0 align-items-center custom-card-row">
+
+                        <!-- 🖼 Left Image -->
+                        <div class="col-4">
+                            <img src="image.png" class="img-fluid rounded custom-img" alt="Physics">
+                        </div>
+
+                        <!-- 📄 Right Content -->
+                        <div class="col-8">
+                            <div class="p-2">
+                                <h5 class="custom-title">Physics Book</h5>
+                                <p class="custom-text">Class 11 Physics Textbook</p>
+                                <a href="#" class="btn btn-sm btn-success custom-btn">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- book 4 -->
+            <div class="col-md-4 mb-3 custom-card-item" data-category="books">
+                <div class="custom-card p-2">
+
+                    <div class="row g-0 align-items-center custom-card-row">
+
+                        <!-- 🖼 Left Image -->
+                        <div class="col-4">
+                            <img src="image.png" class="img-fluid rounded custom-img" alt="Physics">
+                        </div>
+
+                        <!-- 📄 Right Content -->
+                        <div class="col-8">
+                            <div class="p-2">
+                                <h5 class="custom-title">Physics Book</h5>
+                                <p class="custom-text">Class 11 Physics Textbook</p>
+                                <a href="#" class="btn btn-sm btn-success custom-btn">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- book 5 -->
+            <div class="col-md-4 mb-3 custom-card-item" data-category="books">
+                <div class="custom-card p-2">
+
+                    <div class="row g-0 align-items-center custom-card-row">
+
+                        <!-- 🖼 Left Image -->
+                        <div class="col-4">
+                            <img src="image.png" class="img-fluid rounded custom-img" alt="Physics">
+                        </div>
+
+                        <!-- 📄 Right Content -->
+                        <div class="col-8">
+                            <div class="p-2">
+                                <h5 class="custom-title">Physics Book</h5>
+                                <p class="custom-text">Class 11 Physics Textbook</p>
+                                <a href="#" class="btn btn-sm btn-success custom-btn">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- book 6 -->
+            <div class="col-md-4 mb-3 custom-card-item" data-category="books">
+                <div class="custom-card p-2">
+
+                    <div class="row g-0 align-items-center custom-card-row">
+
+                        <!-- 🖼 Left Image -->
+                        <div class="col-4">
+                            <img src="image.png" class="img-fluid rounded custom-img" alt="Physics">
+                        </div>
+
+                        <!-- 📄 Right Content -->
+                        <div class="col-8">
+                            <div class="p-2">
+                                <h5 class="custom-title">Physics Book</h5>
+                                <p class="custom-text">Class 11 Physics Textbook</p>
+                                <a href="#" class="btn btn-sm btn-success custom-btn">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- book 7 -->
+            <div class="col-md-4 mb-3 custom-card-item" data-category="books">
+                <div class="custom-card p-2">
+
+                    <div class="row g-0 align-items-center custom-card-row">
+
+                        <!-- 🖼 Left Image -->
+                        <div class="col-4">
+                            <img src="image.png" class="img-fluid rounded custom-img" alt="Physics">
+                        </div>
+
+                        <!-- 📄 Right Content -->
+                        <div class="col-8">
+                            <div class="p-2">
+                                <h5 class="custom-title">Physics Book</h5>
+                                <p class="custom-text">Class 11 Physics Textbook</p>
+                                <a href="#" class="btn btn-sm btn-success custom-btn">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- book 8 -->
+            <div class="col-md-4 mb-3 custom-card-item" data-category="books">
+                <div class="custom-card p-2">
+
+                    <div class="row g-0 align-items-center custom-card-row">
+
+                        <!-- 🖼 Left Image -->
+                        <div class="col-4">
+                            <img src="image.png" class="img-fluid rounded custom-img" alt="Physics">
+                        </div>
+
+                        <!-- 📄 Right Content -->
+                        <div class="col-8">
+                            <div class="p-2">
+                                <h5 class="custom-title">Physics Book</h5>
+                                <p class="custom-text">Class 11 Physics Textbook</p>
+                                <a href="#" class="btn btn-sm btn-success custom-btn">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- book 9 -->
+            <div class="col-md-4 mb-3 custom-card-item" data-category="books">
+                <div class="custom-card p-2">
+
+                    <div class="row g-0 align-items-center custom-card-row">
+
+                        <!-- 🖼 Left Image -->
+                        <div class="col-4">
+                            <img src="image.png" class="img-fluid rounded custom-img" alt="Physics">
+                        </div>
+
+                        <!-- 📄 Right Content -->
+                        <div class="col-8">
+                            <div class="p-2">
+                                <h5 class="custom-title">Physics Book</h5>
+                                <p class="custom-text">Class 11 Physics Textbook</p>
+                                <a href="#" class="btn btn-sm btn-success custom-btn">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- book 10 -->
+            <div class="col-md-4 mb-3 custom-card-item" data-category="books">
+                <div class="custom-card p-2">
+
+                    <div class="row g-0 align-items-center custom-card-row">
+
+                        <!-- 🖼 Left Image -->
+                        <div class="col-4">
+                            <img src="image.png" class="img-fluid rounded custom-img" alt="Physics">
+                        </div>
+
+                        <!-- 📄 Right Content -->
+                        <div class="col-8">
+                            <div class="p-2">
+                                <h5 class="custom-title">Physics Book</h5>
+                                <p class="custom-text">Class 11 Physics Textbook</p>
+                                <a href="#" class="btn btn-sm btn-success custom-btn">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- book 11 -->
+            <div class="col-md-4 mb-3 custom-card-item" data-category="books">
+                <div class="custom-card p-2">
+
+                    <div class="row g-0 align-items-center custom-card-row">
+
+                        <!-- 🖼 Left Image -->
+                        <div class="col-4">
+                            <img src="image.png" class="img-fluid rounded custom-img" alt="Physics">
+                        </div>
+
+                        <!-- 📄 Right Content -->
+                        <div class="col-8">
+                            <div class="p-2">
+                                <h5 class="custom-title">Physics Book</h5>
+                                <p class="custom-text">Class 11 Physics Textbook</p>
+                                <a href="#" class="btn btn-sm btn-success custom-btn">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- book 12 -->
+            <div class="col-md-4 mb-3 custom-card-item" data-category="books">
+                <div class="custom-card p-2">
+
+                    <div class="row g-0 align-items-center custom-card-row">
+
+                        <!-- 🖼 Left Image -->
+                        <div class="col-4">
+                            <img src="image.png" class="img-fluid rounded custom-img" alt="Physics">
+                        </div>
+
+                        <!-- 📄 Right Content -->
+                        <div class="col-8">
+                            <div class="p-2">
+                                <h5 class="custom-title">Physics Book</h5>
+                                <p class="custom-text">Class 11 Physics Textbook</p>
+                                <a href="#" class="btn btn-sm btn-success custom-btn">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- book 13 -->
+            <div class="col-md-4 mb-3 custom-card-item" data-category="books">
+                <div class="custom-card p-2">
+
+                    <div class="row g-0 align-items-center custom-card-row">
+
+                        <!-- 🖼 Left Image -->
+                        <div class="col-4">
+                            <img src="image.png" class="img-fluid rounded custom-img" alt="Physics">
+                        </div>
+
+                        <!-- 📄 Right Content -->
+                        <div class="col-8">
+                            <div class="p-2">
+                                <h5 class="custom-title">Physics Book</h5>
+                                <p class="custom-text">Class 11 Physics Textbook</p>
+                                <a href="#" class="btn btn-sm btn-success custom-btn">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- book 14 -->
+            <div class="col-md-4 mb-3 custom-card-item" data-category="books">
+                <div class="custom-card p-2">
+
+                    <div class="row g-0 align-items-center custom-card-row">
+
+                        <!-- 🖼 Left Image -->
+                        <div class="col-4">
+                            <img src="image.png" class="img-fluid rounded custom-img" alt="Physics">
+                        </div>
+
+                        <!-- 📄 Right Content -->
+                        <div class="col-8">
+                            <div class="p-2">
+                                <h5 class="custom-title">Physics Book</h5>
+                                <p class="custom-text">Class 11 Physics Textbook</p>
+                                <a href="#" class="btn btn-sm btn-success custom-btn">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- book 15 -->
+            <div class="col-md-4 mb-3 custom-card-item" data-category="books">
+                <div class="custom-card p-2">
+
+                    <div class="row g-0 align-items-center custom-card-row">
+
+                        <!-- 🖼 Left Image -->
+                        <div class="col-4">
+                            <img src="image.png" class="img-fluid rounded custom-img" alt="Physics">
+                        </div>
+
+                        <!-- 📄 Right Content -->
+                        <div class="col-8">
+                            <div class="p-2">
+                                <h5 class="custom-title">Physics Book</h5>
+                                <p class="custom-text">Class 11 Physics Textbook</p>
+                                <a href="#" class="btn btn-sm btn-success custom-btn">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- book 16 -->
+            <div class="col-md-4 mb-3 custom-card-item" data-category="books">
+                <div class="custom-card p-2">
+
+                    <div class="row g-0 align-items-center custom-card-row">
+
+                        <!-- 🖼 Left Image -->
+                        <div class="col-4">
+                            <img src="image.png" class="img-fluid rounded custom-img" alt="Physics">
+                        </div>
+
+                        <!-- 📄 Right Content -->
+                        <div class="col-8">
+                            <div class="p-2">
+                                <h5 class="custom-title">Physics Book</h5>
+                                <p class="custom-text">Class 11 Physics Textbook</p>
+                                <a href="#" class="btn btn-sm btn-success custom-btn">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- book 17 -->
+            <div class="col-md-4 mb-3 custom-card-item" data-category="books">
+                <div class="custom-card p-2">
+
+                    <div class="row g-0 align-items-center custom-card-row">
+
+                        <!-- 🖼 Left Image -->
+                        <div class="col-4">
+                            <img src="image.png" class="img-fluid rounded custom-img" alt="Physics">
+                        </div>
+
+                        <!-- 📄 Right Content -->
+                        <div class="col-8">
+                            <div class="p-2">
+                                <h5 class="custom-title">Physics Book</h5>
+                                <p class="custom-text">Class 11 Physics Textbook</p>
+                                <a href="#" class="btn btn-sm btn-success custom-btn">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- book 18 -->
+            <div class="col-md-4 mb-3 custom-card-item" data-category="books">
+                <div class="custom-card p-2">
+
+                    <div class="row g-0 align-items-center custom-card-row">
+
+                        <!-- 🖼 Left Image -->
+                        <div class="col-4">
+                            <img src="image.png" class="img-fluid rounded custom-img" alt="Physics">
+                        </div>
+
+                        <!-- 📄 Right Content -->
+                        <div class="col-8">
+                            <div class="p-2">
+                                <h5 class="custom-title">Physics Book</h5>
+                                <p class="custom-text">Class 11 Physics Textbook</p>
+                                <a href="#" class="btn btn-sm btn-success custom-btn">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- book 19 -->
+            <div class="col-md-4 mb-3 custom-card-item" data-category="books">
+                <div class="custom-card p-2">
+
+                    <div class="row g-0 align-items-center custom-card-row">
+
+                        <!-- 🖼 Left Image -->
+                        <div class="col-4">
+                            <img src="image.png" class="img-fluid rounded custom-img" alt="Physics">
+                        </div>
+
+                        <!-- 📄 Right Content -->
+                        <div class="col-8">
+                            <div class="p-2">
+                                <h5 class="custom-title">Physics Book</h5>
+                                <p class="custom-text">Class 11 Physics Textbook</p>
+                                <a href="#" class="btn btn-sm btn-success custom-btn">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- book 20 -->
+            <div class="col-md-4 mb-3 custom-card-item" data-category="books">
+                <div class="custom-card p-2">
+
+                    <div class="row g-0 align-items-center custom-card-row">
+
+                        <!-- 🖼 Left Image -->
+                        <div class="col-4">
+                            <img src="image.png" class="img-fluid rounded custom-img" alt="Physics">
+                        </div>
+
+                        <!-- 📄 Right Content -->
+                        <div class="col-8">
+                            <div class="p-2">
+                                <h5 class="custom-title">Physics Book</h5>
+                                <p class="custom-text">Class 11 Physics Textbook</p>
+                                <a href="#" class="btn btn-sm btn-success custom-btn">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- book 21 -->
+            <div class="col-md-4 mb-3 custom-card-item" data-category="books">
+                <div class="custom-card p-2">
+
+                    <div class="row g-0 align-items-center custom-card-row">
+
+                        <!-- 🖼 Left Image -->
+                        <div class="col-4">
+                            <img src="image.png" class="img-fluid rounded custom-img" alt="Physics">
+                        </div>
+
+                        <!-- 📄 Right Content -->
+                        <div class="col-8">
+                            <div class="p-2">
+                                <h5 class="custom-title">Physics Book</h5>
+                                <p class="custom-text">Class 11 Physics Textbook</p>
+                                <a href="#" class="btn btn-sm btn-success custom-btn">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- book 22 -->
+            <div class="col-md-4 mb-3 custom-card-item" data-category="books">
+                <div class="custom-card p-2">
+
+                    <div class="row g-0 align-items-center custom-card-row">
+
+                        <!-- 🖼 Left Image -->
+                        <div class="col-4">
+                            <img src="image.png" class="img-fluid rounded custom-img" alt="Physics">
+                        </div>
+
+                        <!-- 📄 Right Content -->
+                        <div class="col-8">
+                            <div class="p-2">
+                                <h5 class="custom-title">Physics Book</h5>
+                                <p class="custom-text">Class 11 Physics Textbook</p>
+                                <a href="#" class="btn btn-sm btn-success custom-btn">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- book 23 -->
+            <div class="col-md-4 mb-3 custom-card-item" data-category="books">
+                <div class="custom-card p-2">
+
+                    <div class="row g-0 align-items-center custom-card-row">
+
+                        <!-- 🖼 Left Image -->
+                        <div class="col-4">
+                            <img src="image.png" class="img-fluid rounded custom-img" alt="Physics">
+                        </div>
+
+                        <!-- 📄 Right Content -->
+                        <div class="col-8">
+                            <div class="p-2">
+                                <h5 class="custom-title">Physics Book</h5>
+                                <p class="custom-text">Class 11 Physics Textbook</p>
+                                <a href="#" class="btn btn-sm btn-success custom-btn">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- book 24 -->
+            <div class="col-md-4 mb-3 custom-card-item" data-category="books">
+                <div class="custom-card p-2">
+
+                    <div class="row g-0 align-items-center custom-card-row">
+
+                        <!-- 🖼 Left Image -->
+                        <div class="col-4">
+                            <img src="image.png" class="img-fluid rounded custom-img" alt="Physics">
+                        </div>
+
+                        <!-- 📄 Right Content -->
+                        <div class="col-8">
+                            <div class="p-2">
+                                <h5 class="custom-title">Physics Book</h5>
+                                <p class="custom-text">Class 11 Physics Textbook</p>
+                                <a href="#" class="btn btn-sm btn-success custom-btn">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- book 25 -->
+            <div class="col-md-4 mb-3 custom-card-item" data-category="books">
+                <div class="custom-card p-2">
+
+                    <div class="row g-0 align-items-center custom-card-row">
+
+                        <!-- 🖼 Left Image -->
+                        <div class="col-4">
+                            <img src="image.png" class="img-fluid rounded custom-img" alt="Physics">
+                        </div>
+
+                        <!-- 📄 Right Content -->
+                        <div class="col-8">
+                            <div class="p-2">
+                                <h5 class="custom-title">Physics Book</h5>
+                                <p class="custom-text">Class 11 Physics Textbook</p>
+                                <a href="#" class="btn btn-sm btn-success custom-btn">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- book 26 -->
+            <div class="col-md-4 mb-3 custom-card-item" data-category="books">
+                <div class="custom-card p-2">
+
+                    <div class="row g-0 align-items-center custom-card-row">
+
+                        <!-- 🖼 Left Image -->
+                        <div class="col-4">
+                            <img src="image.png" class="img-fluid rounded custom-img" alt="Physics">
+                        </div>
+
+                        <!-- 📄 Right Content -->
+                        <div class="col-8">
+                            <div class="p-2">
+                                <h5 class="custom-title">Physics Book</h5>
+                                <p class="custom-text">Class 11 Physics Textbook</p>
+                                <a href="#" class="btn btn-sm btn-success custom-btn">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- book 27 -->
+            <div class="col-md-4 mb-3 custom-card-item" data-category="books">
+                <div class="custom-card p-2">
+
+                    <div class="row g-0 align-items-center custom-card-row">
+
+                        <!-- 🖼 Left Image -->
+                        <div class="col-4">
+                            <img src="image.png" class="img-fluid rounded custom-img" alt="Physics">
+                        </div>
+
+                        <!-- 📄 Right Content -->
+                        <div class="col-8">
+                            <div class="p-2">
+                                <h5 class="custom-title">Physics Book</h5>
+                                <p class="custom-text">Class 11 Physics Textbook</p>
+                                <a href="#" class="btn btn-sm btn-success custom-btn">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- book 28 -->
+            <div class="col-md-4 mb-3 custom-card-item" data-category="books">
+                <div class="custom-card p-2">
+
+                    <div class="row g-0 align-items-center custom-card-row">
+
+                        <!-- 🖼 Left Image -->
+                        <div class="col-4">
+                            <img src="image.png" class="img-fluid rounded custom-img" alt="Physics">
+                        </div>
+
+                        <!-- 📄 Right Content -->
+                        <div class="col-8">
+                            <div class="p-2">
+                                <h5 class="custom-title">Physics Book</h5>
+                                <p class="custom-text">Class 11 Physics Textbook</p>
+                                <a href="#" class="btn btn-sm btn-success custom-btn">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- book 29 -->
+            <div class="col-md-4 mb-3 custom-card-item" data-category="books">
+                <div class="custom-card p-2">
+
+                    <div class="row g-0 align-items-center custom-card-row">
+
+                        <!-- 🖼 Left Image -->
+                        <div class="col-4">
+                            <img src="image.png" class="img-fluid rounded custom-img" alt="Physics">
+                        </div>
+
+                        <!-- 📄 Right Content -->
+                        <div class="col-8">
+                            <div class="p-2">
+                                <h5 class="custom-title">Physics Book</h5>
+                                <p class="custom-text">Class 11 Physics Textbook</p>
+                                <a href="#" class="btn btn-sm btn-success custom-btn">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Book Section End -->
+            <!-- Paper Section start -->
+            <!-- paper 1  -->
+            <div class="col-md-4 mb-3 custom-card-item" data-category="papers">
+                <div class="custom-card p-2">
+                    <div class="row g-0 align-items-center custom-card-row">
+                        <div class="col-4">
+                            <img src="image.png" class="img-fluid rounded custom-img">
+                        </div>
+                        <div class="col-8">
+                            <div class="p-2">
+                                <h5 class="custom-title">Math Past Paper 2023</h5>
+                                <p class="custom-text">Solved Paper</p>
+                                <a href="#" class="btn btn-success btn-sm custom-btn">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Paper Section End -->
+            <!-- Pairing Scheme Section start -->
+            <!-- Pairing Scheme 1 -->
+            <div class="col-md-4 mb-3 custom-card-item" data-category="scheme">
+                <div class="custom-card p-2">
+                    <div class="row g-0 align-items-center custom-card-row">
+                        <div class="col-4">
+                            <img src="image.png" class="img-fluid rounded custom-img">
+                        </div>
+                        <div class="col-8">
+                            <div class="p-2">
+                                <h5 class="custom-title">Biology Pairing Scheme</h5>
+                                <p class="custom-text">Latest Scheme</p>
+                                <a href="#" class="btn btn-success btn-sm custom-btn">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Pairing Scheme 2 -->
+            <div class="col-md-4 mb-3 custom-card-item" data-category="scheme">
+                <div class="custom-card p-2">
+                    <div class="row g-0 align-items-center custom-card-row">
+                        <div class="col-4">
+                            <img src="image.png" class="img-fluid rounded custom-img">
+                        </div>
+                        <div class="col-8">
+                            <div class="p-2">
+                                <h5 class="custom-title">Biology Pairing Scheme</h5>
+                                <p class="custom-text">Latest Scheme</p>
+                                <a href="#" class="btn btn-success btn-sm custom-btn">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Pairing Scheme 3 -->
+            <div class="col-md-4 mb-3 custom-card-item" data-category="scheme">
+                <div class="custom-card p-2">
+                    <div class="row g-0 align-items-center custom-card-row">
+                        <div class="col-4">
+                            <img src="image.png" class="img-fluid rounded custom-img">
+                        </div>
+                        <div class="col-8">
+                            <div class="p-2">
+                                <h5 class="custom-title">Biology Pairing Scheme</h5>
+                                <p class="custom-text">Latest Scheme</p>
+                                <a href="#" class="btn btn-success btn-sm custom-btn">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Pairing Scheme 4 -->
+            <div class="col-md-4 mb-3 custom-card-item" data-category="scheme">
+                <div class="custom-card p-2">
+                    <div class="row g-0 align-items-center custom-card-row">
+                        <div class="col-4">
+                            <img src="image.png" class="img-fluid rounded custom-img">
+                        </div>
+                        <div class="col-8">
+                            <div class="p-2">
+                                <h5 class="custom-title">Biology Pairing Scheme</h5>
+                                <p class="custom-text">Latest Scheme</p>
+                                <a href="#" class="btn btn-success btn-sm custom-btn">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Pairing Scheme 5 -->
+            <div class="col-md-4 mb-3 custom-card-item" data-category="scheme">
+                <div class="custom-card p-2">
+                    <div class="row g-0 align-items-center custom-card-row">
+                        <div class="col-4">
+                            <img src="image.png" class="img-fluid rounded custom-img">
+                        </div>
+                        <div class="col-8">
+                            <div class="p-2">
+                                <h5 class="custom-title">Biology Pairing Scheme</h5>
+                                <p class="custom-text">Latest Scheme</p>
+                                <a href="#" class="btn btn-success btn-sm custom-btn">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Pairing Scheme 6 -->
+            <div class="col-md-4 mb-3 custom-card-item" data-category="scheme">
+                <div class="custom-card p-2">
+                    <div class="row g-0 align-items-center custom-card-row">
+                        <div class="col-4">
+                            <img src="image.png" class="img-fluid rounded custom-img">
+                        </div>
+                        <div class="col-8">
+                            <div class="p-2">
+                                <h5 class="custom-title">Biology Pairing Scheme</h5>
+                                <p class="custom-text">Latest Scheme</p>
+                                <a href="#" class="btn btn-success btn-sm custom-btn">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Pairing Scheme 7 -->
+            <div class="col-md-4 mb-3 custom-card-item" data-category="scheme">
+                <div class="custom-card p-2">
+                    <div class="row g-0 align-items-center custom-card-row">
+                        <div class="col-4">
+                            <img src="image.png" class="img-fluid rounded custom-img">
+                        </div>
+                        <div class="col-8">
+                            <div class="p-2">
+                                <h5 class="custom-title">Biology Pairing Scheme</h5>
+                                <p class="custom-text">Latest Scheme</p>
+                                <a href="#" class="btn btn-success btn-sm custom-btn">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Pairing Scheme 8 -->
+            <div class="col-md-4 mb-3 custom-card-item" data-category="scheme">
+                <div class="custom-card p-2">
+                    <div class="row g-0 align-items-center custom-card-row">
+                        <div class="col-4">
+                            <img src="image.png" class="img-fluid rounded custom-img">
+                        </div>
+                        <div class="col-8">
+                            <div class="p-2">
+                                <h5 class="custom-title">Biology Pairing Scheme</h5>
+                                <p class="custom-text">Latest Scheme</p>
+                                <a href="#" class="btn btn-success btn-sm custom-btn">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Pairing Scheme 9 -->
+            <div class="col-md-4 mb-3 custom-card-item" data-category="scheme">
+                <div class="custom-card p-2">
+                    <div class="row g-0 align-items-center custom-card-row">
+                        <div class="col-4">
+                            <img src="image.png" class="img-fluid rounded custom-img">
+                        </div>
+                        <div class="col-8">
+                            <div class="p-2">
+                                <h5 class="custom-title">Biology Pairing Scheme</h5>
+                                <p class="custom-text">Latest Scheme</p>
+                                <a href="#" class="btn btn-success btn-sm custom-btn">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Pairing Scheme 10 -->
+            <div class="col-md-4 mb-3 custom-card-item" data-category="scheme">
+                <div class="custom-card p-2">
+                    <div class="row g-0 align-items-center custom-card-row">
+                        <div class="col-4">
+                            <img src="image.png" class="img-fluid rounded custom-img">
+                        </div>
+                        <div class="col-8">
+                            <div class="p-2">
+                                <h5 class="custom-title">Biology Pairing Scheme</h5>
+                                <p class="custom-text">Latest Scheme</p>
+                                <a href="#" class="btn btn-success btn-sm custom-btn">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Pairing Scheme 11 -->
+            <div class="col-md-4 mb-3 custom-card-item" data-category="scheme">
+                <div class="custom-card p-2">
+                    <div class="row g-0 align-items-center custom-card-row">
+                        <div class="col-4">
+                            <img src="image.png" class="img-fluid rounded custom-img">
+                        </div>
+                        <div class="col-8">
+                            <div class="p-2">
+                                <h5 class="custom-title">Biology Pairing Scheme</h5>
+                                <p class="custom-text">Latest Scheme</p>
+                                <a href="#" class="btn btn-success btn-sm custom-btn">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Pairing Scheme 12 -->
+            <div class="col-md-4 mb-3 custom-card-item" data-category="scheme">
+                <div class="custom-card p-2">
+                    <div class="row g-0 align-items-center custom-card-row">
+                        <div class="col-4">
+                            <img src="image.png" class="img-fluid rounded custom-img">
+                        </div>
+                        <div class="col-8">
+                            <div class="p-2">
+                                <h5 class="custom-title">Biology Pairing Scheme</h5>
+                                <p class="custom-text">Latest Scheme</p>
+                                <a href="#" class="btn btn-success btn-sm custom-btn">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Pairing Scheme 13 -->
+            <div class="col-md-4 mb-3 custom-card-item" data-category="scheme">
+                <div class="custom-card p-2">
+                    <div class="row g-0 align-items-center custom-card-row">
+                        <div class="col-4">
+                            <img src="image.png" class="img-fluid rounded custom-img">
+                        </div>
+                        <div class="col-8">
+                            <div class="p-2">
+                                <h5 class="custom-title">Biology Pairing Scheme</h5>
+                                <p class="custom-text">Latest Scheme</p>
+                                <a href="#" class="btn btn-success btn-sm custom-btn">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Pairing Scheme 14 -->
+            <div class="col-md-4 mb-3 custom-card-item" data-category="scheme">
+                <div class="custom-card p-2">
+                    <div class="row g-0 align-items-center custom-card-row">
+                        <div class="col-4">
+                            <img src="image.png" class="img-fluid rounded custom-img">
+                        </div>
+                        <div class="col-8">
+                            <div class="p-2">
+                                <h5 class="custom-title">Biology Pairing Scheme</h5>
+                                <p class="custom-text">Latest Scheme</p>
+                                <a href="#" class="btn btn-success btn-sm custom-btn">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Pairing Scheme 15 -->
+            <div class="col-md-4 mb-3 custom-card-item" data-category="scheme">
+                <div class="custom-card p-2">
+                    <div class="row g-0 align-items-center custom-card-row">
+                        <div class="col-4">
+                            <img src="image.png" class="img-fluid rounded custom-img">
+                        </div>
+                        <div class="col-8">
+                            <div class="p-2">
+                                <h5 class="custom-title">Biology Pairing Scheme</h5>
+                                <p class="custom-text">Latest Scheme</p>
+                                <a href="#" class="btn btn-success btn-sm custom-btn">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Pairing Scheme Section start -->
+        </div>
+    </main>
+    <script>
+        // class file code 
+
+        let searchBar_class = document.getElementById("searchBar_class");
+        let cards = document.querySelectorAll(".custom-card-item");
+        let buttons = document.querySelectorAll(".custom-filter");
+
+        let currentFilter = "all";
+
+        // 🔍 Search
+        searchBar_class.addEventListener("keyup", filterCards);
+
+        // 🔘 Filter buttons
+        buttons.forEach((btn) => {
+            btn.addEventListener("click", function () {
+                currentFilter = this.getAttribute("data-filter");
+
+                buttons.forEach((b) => b.classList.remove("btn-primary"));
+                this.classList.add("btn-primary");
+
+                filterCards();
+            });
+        });
+
+        // 🔥 Main function
+        function filterCards() {
+            let input = searchBar_class.value.toLowerCase();
+
+            cards.forEach((card) => {
+                let text = card.innerText.toLowerCase();
+                let category = card.getAttribute("data-category");
+
+                let matchSearch = text.includes(input);
+                let matchCategory = currentFilter === "all" || category === currentFilter;
+
+                card.style.display = matchSearch && matchCategory ? "block" : "none";
+            });
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
